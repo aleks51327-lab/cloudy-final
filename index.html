@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOUDI - Облачные серверы</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logoMenu">
+                <a href="./index.html" class="headerLogo">CLOUD<span class="blueText">I</span></a>
+                <div class="menu">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li><a href="#idService" class="menu-item">Сервисы</a><li>
+                        <li><a href="#idSolutions" class="menu-item">Решения</a><li>
+                        <li><a href="#idFaq" class="menu-item">FAQ</a><li>
+                        <li><a href="./instruct.html" class="menu-item">Инструкции</a><li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="headNav">
+                <a href="#idService" class="btn">Сервисы</a>
+                <a href="#idSolutions" class="btn">Решения</a>
+                <a href="#idFaq" class="btn">FAQ</a>
+                <a href="./instruct.html" class="btn">Инструкции</a>
+            </div>
+
+           
+
+            <div class="headerButtons">
+                <a href="./logIn.html" class="buttonIn">Войти</a>
+                <a href="./registration.html" class="buttonOn">Создать аккаунт</a>
+            </div>    
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="home">
+            <div class="container">
+                <div class="display">
+                    <div class="blockTitle">
+                        <h1 class="homeTitle">Наш проект<br>уже <span class="blueText">в облаке.</span><br>А ваш?</h1>
+                        <h3 class="homeDesc"><span class="blueText">Зарегестрируйтесь</span> и пользуйтесь<br>нашими сервисами уже <span class="blueText">сейчас.</span></h3>
+                        <a href="./registration.html" class="buttonCreate">Создать аккаунт</a>      
+                    </div>
+
+                    <div class="blockImg">
+                        <img src="./homeImg.png" alt="homeImgCloud" class="blockImg">    
+                    </div>    
+                </div>   
+            </div>
+        </section>
+
+        <section class="service" id="idService">
+            <div class="container">
+                <h2 class="title">Облачные <span class="blueText">сервисы</span><br>для любых продуктов<span class="blueText">.</span></h2>   
+            
+                <div class="blockServices1">
+                    <a href="./cloudServers.html" class="blockLink">
+                        <div class="block">
+                            <div class="top">
+                                <h3 class="cloudServer">Облачные серверы</h3>
+                                <img src="./imgCloudService.png" alt="imgCloudServer" class="imgIn">
+                            </div>
+                            <div class="bottom">
+                                <p class="serviceDesk">Масштабируемые серверы подходят для игр, сайтов, хранения данных и вычислений.</p>
+                            </div>
+                        </div>        
+                    </a>
+                    
+                    <a href="./dataBase.html" class="blockLink">
+                        <div class="block">
+                            <div class="top">
+                                <h3 class="cloudServer">Облачные базы данных</h3>
+                                <img src="./imgDatabaseService.png" alt="imgDatabase" class="imgIn">
+                            </div>
+                            <div class="bottom">
+                                <p class="serviceDesk">Готовые СУБД без забот об управлении: MySQL, Apache Kafka и PostgreSQL. </p>
+                            </div>
+                        </div>        
+                    </a>
+
+                    <a href="./vdsVps.html" class="blockLink">
+                        <div class="block">
+                            <div class="top">
+                                <h3 class="cloudServer">VDS и VPS</h3>
+                                <img src="./imgVdsService.png" alt="imgVdsService" class="imgIn">
+                            </div>
+                            <div class="bottom">
+                                <p class="serviceDesk">Готовые виртуальные серверы. Подходит для быстрого запуска сервисов и игр.</p>
+                            </div>
+                        </div>        
+                    </a>
+                </div>
+            </div>
+
+            
+
+        </section>
+
+        <section class="solutions" id="idSolutions">
+            <div class="container">
+                <h2 class="title">Облачные <span class="blueText">решения</span><br>для любых продуктов<span class="blueText">.</span></h2>
+                
+                <div class="blockSolution">
+                    <a href="./migCloud.html" class="blockLink">
+                        <div class="blockS">
+                            <div class="top">
+                                <h3 class="cloudServer">Миграция в облако</h3>
+                                <img src="./imgCloudSolution.png" alt="imgInCloudSolution" class="imgIn">
+                            </div>
+                            <div class="bottom">
+                                <p class="serviceDesk">Плавный и надежный переход сервисов<br>в облако — частично или полностью.</p>
+                            </div>
+                        </div>        
+                    </a>
+
+                    <a href="./busCloud.html" class="blockLink">
+                        <div class="blockS">
+                            <div class="top">
+                                <h3 class="cloudServer">Облако для бизнеса</h3>
+                                <img src="./imgBusinessSolution.png" alt="imgBusinessSolution" class="imgIn">
+                            </div>
+                            <div class="bottom">
+                                <p class="serviceDesk">Надежная инфраструктура для компании<br>и его продукта любого масштаба.</p>
+                            </div>
+                        </div>        
+                    </a>
+                </div> 
+            </div>      
+        </section>
+
+        <section class="faq" id="idFaq">
+            <div class="container">
+                <h2 class="title">Частозадаваемые<br><span class="blueText">вопросы.</span>FAQ<span class="blueText">.</span></h2>
+                
+                <div class="faqImageBox">
+                    <img src="./og_og_1669490907212432716.jpg" alt="faq image">
+                </div>
+
+                <div class="faqObj">
+                   
+                    <div class="faqItem">
+                        <input type="checkbox" class="faqInput" name="faq" id="faq1">
+                        <label class="topLink" for="faq1">
+                            <h3 class="faqTitle">Что такое VPS?</h3>
+                            <img src="" alt=""> 
+                        </label>    
+                        <div class="bottomLink">
+                            <p>VPS (Virtual Private Server) — виртуальный выделенный сервер, представляющий собой отдельный контейнер внутри физического сервера, обладающий собственной операционной системой и ресурсами (процессор, память, диск). Это позволяет владельцу устанавливать любое ПО и настраивать конфигурацию по своему усмотрению, обеспечивая высокую гибкость и производительность по доступной цене.</p>
+                        </div>
+                    </div>
+
+                    <div class="faqItem">
+                        <input type="checkbox" class="faqInput" name="faq" id="faq2">
+                        <label class="topLink" for="faq2">
+                            <h3 class="faqTitle">Что такое VDS?</h3> 
+                            <img src="" alt=""> 
+                        </label>    
+                        <div class="bottomLink">
+                            <p>VDS (Virtual Dedicated Server) — практически аналогично VPS, это тоже виртуальный выделенный сервер. Термин VDS используется реже и исторически возник раньше, однако технически оба понятия обозначают одно и то же: виртуализированный сервер с собственным набором ресурсов и ОС, предоставляемый пользователю как отдельная физическая машина. Основное отличие заключается лишь в терминологии и маркетинговых предпочтениях хостинг-провайдеров.</p>
+                        </div>
+                    </div>
+
+                    <div class="faqItem">
+                        <input type="checkbox" class="faqInput" name="faq" id="faq3">
+                        <label class="topLink" for="faq3">
+                            <h3 class="faqTitle">Какие отличия между VDS и VPS?</h3> 
+                            <img src="" alt=""> 
+                        </label>    
+                        <div class="bottomLink">
+                            <p>VPS и VDS — фактически одно и то же, разница кроется в подходе провайдеров. Исторически VPS означало использование упрощённой виртуализации, а VDS — полной виртуализации с полным контролем и гарантией ресурсов. Сегодня различия минимальные, выбор зависит от предпочтений провайдера.</p>
+                        </div>
+                    </div>
+
+                    <div class="faqItem">
+                        <input type="checkbox" class="faqInput" name="faq" id="faq4">
+                        <label class="topLink" for="faq4">
+                            <h3 class="faqTitle">Что такое выделенный сервер?</h3> 
+                            <img src="" alt=""> 
+                        </label>    
+                        <div class="bottomLink">
+                            <p>Выделенный сервер (dedicated server) — это физическое оборудование (сервер), полностью предоставляемое одному пользователю или организации. Все аппаратные ресурсы такого сервера принадлежат исключительно вам, и никто другой не сможет влиять на его производительность.</p>
+                        </div>
+                    </div>
+
+                    <div class="faqItem">
+                        <input type="checkbox" class="faqInput" name="faq" id="faq5">
+                        <label class="topLink" for="faq5">
+                            <h3 class="faqTitle">Зачем нужны облачные базы данных?</h3> 
+                            <img src="" alt=""> 
+                        </label>    
+                        <div class="bottomLink">
+                            <p>Облачная база данных (Cloud database) — это тип сервиса, позволяющий хранить, обрабатывать и получать доступ к структурированным данным, расположенным на удаленных серверах ("в облаке"). Такие базы данных управляются специализированными провайдерами, такими как AWS, Google Cloud, Microsoft Azure и др., и предоставляются клиентам по модели "Software as a Service" (SaaS) или "Database as a Service" (DBaaS).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="registration">
+            <div class="container">
+                <div class="createAccount">
+                    <h2 class="title">Начинать с CLOUD<span class="blueText">I</span><br><span class="blueText">- просто!</span></h2>
+                    <h3 class="createAccountDesc"><span class="blueText">Зарегестрируйтесь</span> и пользуйтесь<br>нашими сервисами уже <span class="blueText">сейчас.</span></h3>
+                    <a href="./registration.html" class="buttonCreate">Создать аккаунт</a>
+                </div>
+
+                <div class="instructions" id="idInstructions">
+                    <h2 class="title">Что делать <span class="blueText">после</span><br>регистрации<span class="blueText">?</span></h2>
+                    <h3 class="createAccountDesc">Следуйте нашим <span class="blueText">простым</span> и <span class="blueText">понятным<br>инструкциям</span> по нашим сервисам<span class="blueText">.</span></h3>
+                    <a href="./instruct.html" class="buttonInstruct">Инструкции</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footBlock">
+                <div class="linksSites">
+                    <a href="./index.html" class="headerLogo">CLOUDI</a>
+                    <a href="https://vk.com/pantyukhov2013" target="_blank" class="linkSite">
+                        <img src="./logoVk.png" alt="logoVK">
+                        <p>ВКонтакте</p>
+                    </a>
+
+                    <a href="https://github.com/aleks51327-lab/cloudy..git" target="_blank" class="linkSite">
+                        <img src="./LogoGithub.png" alt="logoGitHub">
+                        <p>GitHub</p>
+                    </a>    
+                </div>   
+            </div>
+
+            <div class="footBlock">
+                <a href="#idService" class="footerTitle">Сервисы</a>
+
+                <a href="./dataBase.html">Облачные базы данных</a>
+
+                <a href="./vdsVps.html">VDS и VPS</a>
+
+                <a href="./cloudServers.html">Облачные серверы</a>
+            </div>
+            
+            
+            <div class="footBlock">
+                <a href="#idSolutions" class="footerTitle">Решения</a>
+
+                <a href="./busCloud.html">Облако для бизнеса</a>
+
+                <a href="./migCloud.html">Миграция в облако</a>
+            </div>
+
+            <a href="./instruct.html" class="footerTitle">Инструкции</a> 
+
+            <a href="#idFaq" class="footerTitle">FAQ</a>     
+        </div>
+    </footer>
+
+</body>
+</html>

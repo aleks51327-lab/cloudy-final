@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VDS и VPS</title>
+    <link rel="stylesheet" href="./styleInfo.css">
+</head>
+<body>
+   <header class="header">
+        <div class="container">
+            <div class="logoMenu">
+                <a href="./index.html" class="headerLogo">CLOUD<span class="blueText">I</span></a>
+                <div class="menu">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li><a href="./index.html" class="menu-item">Главная</a><li>
+                        <li><a href="./index.html #idService" class="menu-item">Сервисы</a><li>
+                        <li><a href="./index.html #idSolutions" class="menu-item">Решения</a><li>
+                        <li><a href="./instruct.html" class="menu-item">Инструкции</a><li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="headNav">
+                <a href="./index.html" class="btn">Главная</a>
+                <a href="./index.html #idService" class="btn">Сервисы</a>
+                <a href="./index.html #idSolutions" class="btn">Решения</a>
+                <a href="./instruct.html" class="btn">Инструкции</a>
+            </div>
+
+           
+
+            <div class="headerButtons">
+                <a href="./logIn.html" class="buttonIn">Войти</a>
+                <a href="./registration.html" class="buttonOn">Создать аккаунт</a>
+            </div>    
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="mainTitle">
+            <div class="container">
+                <h1 class="title">Что такое VDS и VPS: отличия,<br>преимущества и примеры<span class="blueText">.</span></h1>    
+                
+                <div class="content">
+                    <h3 class="contentTitle">Содержание</h3>
+                    <div class="blockContent">
+                        <a href="#1" class="contentDirect">1. Что такое VDS и VPS</a><br><br>
+                        <a href="#2" class="contentDirect">2. Какие отличия VDS и VPS</a><br><br>
+                        <a href="#3" class="contentDirect">3. Преимущества VDS и VPS</a><br><br>
+                        <a href="#4" class="contentDirect">4. Для чего используется VDS и VPS</a><br><br>
+                        <a href="#5" class="contentDirect">5. Как использовать VDS и VPS</a>    
+                    </div>  
+                </div>
+
+                <p class="contentDesc" id="1"><span class="fatText">VPS (Virtual Private Server) </span>— это виртуальный частный сервер, предоставляемый хостинг-провайдером. Он работает как полноценный сервер с выделенными ресурсами, но физически располагается на одном сервере вместе с другими VPS-экземплярами. Каждый виртуальный сервер изолирован от других, имеет собственную операционную систему, root-доступ, сетевые настройки и файловую систему.</p>
+                <p class="contentDesc" id="1"><span class="fatText">VDS (Virtual Dedicated Server) </span>— это виртуальный выделенный сервер, представляющий собой изолированную среду внутри физической машины, работающей на базе технологии виртуализации. VDS сочетает в себе функциональность полноценного физического сервера с преимуществами виртуальной среды, предлагая пользователю полную свободу действий, аналогичные физическим серверам, при значительно меньших затратах на оборудование и поддержку.</p>    
+            </div>
+        </section>
+
+        <section class="titleInfo">
+            <div class="container">
+                <div class="block">
+                    <h2 class="infoTitle" id="2">Какие отличия между VDS и VPS?</h2>
+                    <p class="contentDesc">VPS и VDS — фактически одно и то же, разница кроется в подходе провайдеров. Исторически VPS означало использование упрощённой виртуализации, а VDS — полной виртуализации с полным контролем и гарантией ресурсов. Сегодня различия минимальные, выбор зависит от предпочтений провайдера.</p>
+                    <ol>
+                        <p class="contentDesc">Основное различие заключается в подходе к обеспечению производительности и ресурсах:</p>
+                        <span class="fatText">VPS (Virtual Private Server):</span>
+                        <li>Обычно создается на основе легковесных гипервизоров типа OpenVZ или Virtuozzo.</li>
+                        <li>Эти гипервизоры работают поверх ядра основной операционной системы хост-машины, разделяя ресурсы (RAM, процессор) динамически среди виртуальных контейнеров.</li>
+                        <li>Риск "переполнения": иногда ресурсы распределяются неравномерно, и один клиент может влиять на производительность другого клиента на той же машине.</li>
+                        <li>Часто применяется там, где требования к ресурсам предсказуемы и умерены.</li>
+                    </ol> 
+
+                    <ol>
+                        <span class="fatText">VDS (Virtual Dedicated Server):</span>
+                        <li>Используется полноценные гипервизоры вроде KVM или Xen, создающие абсолютно изолированные виртуальные окружение, близкие к реальной физической машине.</li>
+                        <li>Каждому клиенту выделяются фиксированные ресурсы (CPU, RAM, диск), которые зарезервированы именно за ним и не могут использоваться другими пользователями.</li>
+                        <li>Гарантирует стабильную производительность вне зависимости от нагрузки соседей.</li>
+                        <li>Чаще всего выбирают для критически важных приложений, требующих стабильно высоких показателей производительности.</li>
+                    </ol> 
+                </div>
+                
+                <div class="block">
+                   <h2 class="infoTitle" id="3">Преимущества VDS и VPS</h2>
+                    <ol>
+                        <span class="fatText">Ключевые особенности VPS:</span>
+                        <li><span class="fatText">Изоляция:</span>Ваши приложения и данные изолированы от других пользователей того же физического сервера.</li>
+                        <li><span class="fatText">Гибкость:</span>Можно выбрать нужное количество процессорных ядер, объём оперативной памяти и хранилища.</li>
+                        <li><span class="fatText">Полный контроль:</span>Пользователь получает доступ к настройкам системы, может устанавливать любое ПО, изменять конфигурацию веб-сервера, базы данных и т. д.</li>
+                        <li><span class="fatText">Оптимальная стоимость:</span>VPS дешевле физического сервера, но предоставляет схожие возможности.</li>
+                    </ol>
+                    
+                    <ol>
+                        <span class="fatText">Преимущества VDS:</span>
+                        <li><span class="fatText">Выделенные ресурсы:</span>Пользователь получает гарантированные ресурсы (CPU, RAM, HDD/SSD), как будто это полноценный физический сервер.</li>
+                        <li><span class="fatText">Независимая работа ОС:</span>Каждый VDS работает автономно, с возможностью установки собственной операционной системы и полного контроля над конфигурациями.</li>
+                        <li><span class="fatText">Низкая стоимость:</span>По сравнению с физическими серверами, аренда VDS обходится дешевле, поскольку физические ресурсы используются совместно несколькими клиентами.</li>
+                        <li><span class="fatText">Простота масштабирования:</span>Ресурсы можно увеличить или уменьшить в зависимости от текущих нужд.</li>
+                        <li><span class="fatText">Быстрое развёртывание:</span>Создать новый VDS можно буквально за минуты, что удобно для тестирования и временных проектов.</li>
+                    </ol>
+                </div>
+
+                <div class="block">
+                   <h2 class="infoTitle" id="4">Для чего использовать VDS и VPS</h2>
+                   
+                   <p class="contentDesc">Физический сервер делится на несколько отдельных виртуальных сред с помощью специального программного обеспечения (гипервизора). Каждая такая среда получает собственные ресурсы CPU, RAM, дискового пространства и сетевых интерфейсов, а также собственную операционную систему. Таким образом, каждый клиент получает собственный выделенный сервер, несмотря на то, что физически он находится на одном физическом оборудовании.</p>
+                    
+                   <ol>
+                        <span class="fatText">Это позволяет использовать его для:</span>
+                        <li>Размещение веб-сайтов и интернет-магазинов.</li>
+                        <li>Развёртывание приложений, чат-ботов, API-сервисов.</li>
+                        <li>Тестирование программ и контейнеров.</li>
+                        <li>Создание игровых серверов.</li>
+                        <li>Размещение корпоративных баз данных и внутренних систем.</li>
+                    </ol>
+                </div>
+
+                <div class="block">
+                   <h2 class="infoTitle" id="5">Как использовать?</h2>
+                   <ol>
+                        <li><span class="fatText">Выбор конфигурации: </span>Благодаря распределенной архитектуре BigQuery способен быстро анализировать терабайты данных за считанные секунды.</li>
+                        <li><span class="fatText">Установка ОС: </span>Система автоматически управляет инфраструктурой, освобождая разработчиков от рутинных задач по настройке и обслуживанию.</li>
+                        <li><span class="fatText">Настройка доступа: </span>Легко интегрируется с другими сервисами Google, такими как Data Studio, Machine Learning Engine и API Analytics.</li>
+                        <li><span class="fatText">Развёртывание приложений: </span>Данные могут загружаться прямо из файлов CSV, JSON, Avro, Parquet или потоково передаваться через API.</li>
+                        <li><span class="fatText">Мониторинг и безопасность: </span>Вы платите только за запросы, выполняемые над вашими данными, что существенно сокращает расходы на хранение и эксплуатацию инфраструктуры.</li>
+                    </ol>
+                </div>
+
+                <p class="contentDesc">Несмотря на частое смешанное употребление терминов, VDS традиционно ассоциируют с более высоким уровнем изоляции и стабильности, а VPS больше подходит для бюджетных и менее требовательных проектов. Но в реальности разница постепенно стирается, так как многие современные провайдеры начинают называть свои услуги универсальным термином VPS/VDS, подчеркивая изоляцию и независимость каждого виртуального окружения.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footBlock">
+                <div class="linksSites">
+                    <a href="./index.html" class="headerLogo">CLOUDI</a>
+                    <a href="https://vk.com/pantyukhov2013" target="_blank" class="linkSite">
+                        <img src="./logoVk.png" alt="logoVK">
+                        <p>ВКонтакте</p>
+                    </a>
+
+                    <a href="https://github.com/aleks51327-lab/cloudy..git" target="_blank" class="linkSite">
+                        <img src="./LogoGithub.png" alt="logoGitHub">
+                        <p>GitHub</p>
+                    </a>    
+                </div>   
+            </div>
+
+            <div class="footBlock">
+                <a href="#idService" class="footerTitle">Сервисы</a>
+
+                <a href="./dataBase.html">Облачные базы данных</a>
+
+                <a href="./vdsVps.html">VDS и VPS</a>
+
+                <a href="./cloudServers.html">Облачные серверы</a>
+            </div>
+            
+            
+            <div class="footBlock">
+                <a href="#idSolutions" class="footerTitle">Решения</a>
+
+                <a href="./busCloud.html">Облако для бизнеса</a>
+
+                <a href="./migCloud.html">Миграция в облако</a>
+            </div>
+
+            <a href="./instruct.html" class="footerTitle">Инструкции</a> 
+
+            <a href="#idFaq" class="footerTitle">FAQ</a>     
+        </div>
+    </footer>
+
+</body>
+</html>

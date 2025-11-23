@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.logInS {
+    padding-left: 120px;
+    font-family: "Inter", sans-serif;
+    color: #878787;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+h3 {
+    padding: 25px 202px 30px 202px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.56px;
+
+    color: #1C1C1C;
+    font-family: "Inter", sans-serif;
+}
+
+.blueText {
+    color: #426BC2;
+}
+
+.button {
+    margin: 0 117px 40px 117px;
+
+    width: 242px;
+    height: 54px;
+
+    border-radius: 15px;
+    background-color: #426BC2;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form {
+    margin-bottom: 30px;
+}
+
+input {
+    margin: 0 70px;
+    padding-left: 20px;
+
+    height: 50px;
+    width: 336px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #878787;
+}
+
+.container {
+    padding: 70px 0;
+    max-width: 476px;
+    margin: 0 auto;
+}
+
+.bg {
+    margin: 20px 0;
+
+    background-color: #F3F4F5;
+    border-radius: 35px;
+}
+
+@media (max-width: 500px) {
+.container {
+    max-width: 400px;
+}
+
+    h3 {
+        padding: 25px 160px;
+    }
+
+    input {
+        max-width: 250px;
+
+    }
+
+    .form {
+        margin-bottom: 15px;
+    }
+
+    .button {
+        font-size: 14px;
+        border-radius: 10px;
+        max-width: 180px;
+        height: 45px;
+    }
+
+    .logInS {
+        margin-left: -35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 300px;
+    }
+
+    h3 {
+        font-size: 24px;
+        padding: 15px 110px;
+    }
+
+    input {
+        max-width: 200px;
+
+    }
+
+    .form {
+        margin-left: -20px;
+        margin-bottom: 15px;
+    }
+
+    .button {
+        font-size: 12px;
+        border-radius: 10px;
+        max-width: 150px;
+        height: 35px;
+        margin-left: 70px;
+    }
+
+    .logInS {
+        font-size: 12px;
+        margin-left: -80px;
+    }
+
+    label {
+        font-size: 9px;
+        margin-left: 35px;
+        margin-bottom: 15px;
+    }
+}

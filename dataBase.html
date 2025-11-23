@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Облачные базы данных</title>
+    <link rel="stylesheet" href="./styleInfo.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logoMenu">
+                <a href="./index.html" class="headerLogo">CLOUD<span class="blueText">I</span></a>
+                <div class="menu">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li><a href="./index.html" class="menu-item">Главная</a><li>
+                        <li><a href="./index.html #idService" class="menu-item">Сервисы</a><li>
+                        <li><a href="./index.html #idSolutions" class="menu-item">Решения</a><li>
+                        <li><a href="./instruct.html" class="menu-item">Инструкции</a><li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="headNav">
+                <a href="./index.html" class="btn">Главная</a>
+                <a href="./index.html #idService" class="btn">Сервисы</a>
+                <a href="./index.html #idSolutions" class="btn">Решения</a>
+                <a href="./instruct.html" class="btn">Инструкции</a>
+            </div>
+
+           
+
+            <div class="headerButtons">
+                <a href="./logIn.html" class="buttonIn">Войти</a>
+                <a href="./registration.html" class="buttonOn">Создать аккаунт</a>
+            </div>    
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="mainTitle">
+            <div class="container">
+                <h1 class="title">Что такое облачные базы данных:<br>преимущества и примеры<span class="blueText">.</span></h1>    
+                
+                <div class="content">
+                    <h3 class="contentTitle">Содержание</h3>
+                    <div class="blockContent">
+                        <a href="#1" class="contentDirect">1. Что такое облачные базы данных</a><br><br>
+                        <a href="#2" class="contentDirect">2. Какие преимущества у облачных баз данных</a><br><br>
+                        <a href="#3" class="contentDirect">3. Примеры баз данных</a><br><br>
+                        <a href="#4" class="contentDirect">4. Amazon Aurora</a><br><br>
+                        <a href="#5" class="contentDirect">5. Google BigQuery</a>    
+                    </div>  
+                </div>
+
+                <p class="contentDesc" id="1"><span class="fatText">Облачные базы данных </span>— это системы управления базами данных, размещённые и функционирующие в облаке, что позволяет хранить, обрабатывать и получать доступ к данным через интернет. Они предоставляют клиентам гибкость, масштабируемость и удобство использования, избавляя пользователей от необходимости самостоятельно обслуживать физическое оборудование и серверы.</p>    
+            </div>
+        </section>
+
+        <section class="titleInfo">
+            <div class="container">
+                <div class="block">
+                   <h2 class="infoTitle" id="2">Какие преимущества у облачных баз данных?</h2>
+                    <ol>
+                        <li><span class="fatText">Масштабируемость:</span> Пользователи могут легко увеличивать или уменьшать количество используемых ресурсов в зависимости от потребностей своего бизнеса, обеспечивая высокую производительность даже при пиковых нагрузках.</li>
+                        <li><span class="fatText">Экономичность:</span> Оплата осуществляется по принципу pay-as-you-go («плати столько, сколько используешь»), что снижает затраты на покупку дорогостоящего аппаратного обеспечения и обслуживание.</li>
+                        <li><span class="fatText">Доступность:</span> Данные доступны из любой точки мира, что обеспечивает мобильность сотрудников и повышает эффективность командной работы.</li>
+                        <li><span class="fatText">Безопасность:</span> Провайдеры облачных решений обеспечивают высокий уровень защиты данных, включая шифрование, резервное копирование и защиту от DDoS атак.</li>
+                    </ol> 
+                </div>
+                
+                <div class="block">
+                   <h2 class="infoTitle" id="3">Популярные примеры облачных баз данных.</h2>
+                    <ol>
+                        <li>Amazon Aurora</li>
+                        <li>Google BigQuery</li>
+                        <li>Microsoft SQL Server на платформе Azure</li>
+                        <li>PostgreSQL на Heroku</li>
+                        <li>MongoDB Atlas</li>
+                    </ol>
+                    <p class="contentDesc">Amazon Aurora и Google BigQuery представляют собой два мощных решения для обработки больших объемов данных, каждое из которых имеет свою специфику и предназначено для разных целей. Рассмотрим их.</p>
+                </div>
+
+                <div class="block">
+                   <h2 class="infoTitle" id="4">Amazon Aurora.</h2>
+                   
+                   <p class="contentDesc"><span class="fatText">Aurora</span>— это реляционная база данных, разработанная компанией Amazon специально для облака AWS. Она совместима с MySQL и PostgreSQL, что упрощает миграцию существующих приложений и инструментов анализа данных.<br>
+                    Aurora идеально подходит для проектов, требующих быстрой обработки транзакционных запросов, большого количества операций чтения-записи и надежных гарантий сохранности данных.</p>
+                    
+                   <ol>
+                        <span class="fatText">Ключевые особенности</span>
+                        <li><span class="fatText">Высокая производительность: </span>До пяти раз быстрее стандартной реализации MySQL и три раза быстрее PostgreSQL.</li>
+                        <li><span class="fatText">Автоматизированное управление: </span>Автоматическое создание резервных копий и восстановление данных и возможность горизонтального масштабирования путем добавления реплик для чтения.</li>
+                        <li><span class="fatText">Гибкая структура ценообразования: </span>Оплата производится исключительно за используемые ресурсы (процессорное время, память, хранение).</li>
+                        <li><span class="fatText">Совместимость с популярными инструментами BI: </span>Поддерживает работу с такими системами бизнес-аналитики, как Tableau, PowerBI и др., обеспечивая визуализацию и обработку данных без сложных интеграций.</li>
+                        <li><span class="fatText">Регулируемое использование памяти и процессоров: </span>Можно выбирать оптимальные конфигурации сервера под конкретные потребности проекта.</li>
+                    </ol>
+                </div>
+
+                <div class="block">
+                   <h2 class="infoTitle" id="5">Google BigQuery</h2>
+                   
+                   <p class="contentDesc"><span class="fatText">BigQuery</span> — это система аналитики больших данных от Google, ориентированная на выполнение высокоскоростных запросов и массовую обработку данных. Это решение отлично справляется с задачей предоставления аналитики практически мгновенно даже на огромных объемах данных.</p>
+                    
+                   <ol>
+                        <span class="fatText">Ключевые особенности</span>
+                        <li><span class="fatText">Скорость обработки: </span>Благодаря распределенной архитектуре BigQuery способен быстро анализировать терабайты данных за считанные секунды.</li>
+                        <li><span class="fatText">Отсутствие необходимости в администрировании: </span>Система автоматически управляет инфраструктурой, освобождая разработчиков от рутинных задач по настройке и обслуживанию.</li>
+                        <li><span class="fatText">Интеграция с экосистемой Google Cloud: </span>Легко интегрируется с другими сервисами Google, такими как Data Studio, Machine Learning Engine и API Analytics.</li>
+                        <li><span class="fatText">Различные форматы загрузки данных: </span>Данные могут загружаться прямо из файлов CSV, JSON, Avro, Parquet или потоково передаваться через API.</li>
+                        <li><span class="fatText">Стоимость определяется объемом обрабатываемых данных: </span>Вы платите только за запросы, выполняемые над вашими данными, что существенно сокращает расходы на хранение и эксплуатацию инфраструктуры.</li>
+                    </ol>
+                </div>
+
+                <p class="contentDesc">Подводя итог, выбор между этими двумя решениями зависит от конкретных требований вашего проекта. Если вам нужны мощные транзакционные возможности и высокая надежность хранения данных, выбирайте Amazon Aurora. Если же приоритет отдаётся скорости анализа больших объёмов данных и работе с большими датасетами, тогда лучшим выбором станет Google BigQuery.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footBlock">
+                <div class="linksSites">
+                    <a href="./index.html" class="headerLogo">CLOUDI</a>
+                    <a href="https://vk.com/pantyukhov2013" target="_blank" class="linkSite">
+                        <img src="./logoVk.png" alt="logoVK">
+                        <p>ВКонтакте</p>
+                    </a>
+
+                    <a href="https://github.com/aleks51327-lab/cloudy..git" target="_blank" class="linkSite">
+                        <img src="./LogoGithub.png" alt="logoGitHub">
+                        <p>GitHub</p>
+                    </a>    
+                </div>   
+            </div>
+
+            <div class="footBlock">
+                <a href="#idService" class="footerTitle">Сервисы</a>
+
+                <a href="./dataBase.html">Облачные базы данных</a>
+
+                <a href="./vdsVps.html">VDS и VPS</a>
+
+                <a href="./cloudServers.html">Облачные серверы</a>
+            </div>
+            
+            
+            <div class="footBlock">
+                <a href="#idSolutions" class="footerTitle">Решения</a>
+
+                <a href="./busCloud.html">Облако для бизнеса</a>
+
+                <a href="./migCloud.html">Миграция в облако</a>
+            </div>
+
+            <a href="./instruct.html" class="footerTitle">Инструкции</a> 
+
+            <a href="#idFaq" class="footerTitle">FAQ</a>     
+        </div>
+    </footer>
+
+</body>
+</html>
